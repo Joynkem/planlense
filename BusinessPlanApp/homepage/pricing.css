@@ -1,0 +1,749 @@
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: ""
+}
+
+#pricing-tiers-page .pbc-mobile-features {
+    display: none;
+    display: none
+}
+
+@media screen and (max-width: 767px) {
+    #pricing-tiers-page .pbc-mobile-features {
+        display:block
+    }
+}
+
+#pricing-tiers-page .pbc-desktop-features {
+    display: block
+}
+
+@media screen and (max-width: 767px) {
+    #pricing-tiers-page .pbc-desktop-features {
+        display:none
+    }
+}
+
+@keyframes strike-through {
+    0% {
+        color: #008561
+    }
+
+    100% {
+        color: #b8c6c2
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        color: rgba(0,0,0,0);
+        visibility: hidden
+    }
+
+    100% {
+        color: #008561;
+        visibility: visible
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        color: #008561;
+        visibility: visible
+    }
+
+    100% {
+        color: rgba(0,0,0,0);
+        visibility: hidden
+    }
+}
+
+section {
+    padding: 50px 0
+}
+
+section h1,section h2,section h3,section h4,section h5,section h6,section p,section span,section a {
+    font-family: Mulish,sans-serif
+}
+
+section h2,section h3,section h4 {
+    padding: 0;
+    margin-top: 0
+}
+
+section#compare-table .table-container .table tbody tr td.subsection-header span.ai-powered,section#pricing-box-container #pricing-boxes .pricing-box ul li span.ai-powered {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(270deg, #be2883 57.85%, #4a2298 100%);
+    line-height: 22px;
+    height: 22px;
+    border: unset;
+    border-radius: 4px;
+    z-index: -1
+}
+
+section#compare-table .table-container .table tbody tr td.subsection-header span.ai-powered::after,section#pricing-box-container #pricing-boxes .pricing-box ul li span.ai-powered::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    margin: 2px;
+    border-radius: 3px
+}
+
+section#compare-table .table-container .table tbody tr td.subsection-header span.ai-powered .ai-powered-wrapper,section#pricing-box-container #pricing-boxes .pricing-box ul li span.ai-powered .ai-powered-wrapper {
+    position: relative;
+    top: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(270deg, #be2883 57.85%, #4a2298 100%);
+    background-clip: text;
+    color: rgba(0,0,0,0);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 10px;
+    padding: 0 4px;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 4px;
+    z-index: 1
+}
+
+section#compare-table .table-container .table tbody tr td.subsection-header span.ai-powered .pas-icon-lp-stars-2,section#pricing-box-container #pricing-boxes .pricing-box ul li span.ai-powered .pas-icon-lp-stars-2 {
+    font-size: 14px;
+    line-height: 0;
+    padding: unset;
+    margin: unset;
+    border: unset
+}
+
+section#hero {
+    padding: 0;
+    background: #fff;
+    color: #fff
+}
+
+section#hero h1 {
+    font-size: 48px;
+    margin: auto;
+    text-align: center;
+    color: #202d41;
+    font-size: 48px;
+    font-weight: 900;
+    padding: 50px 0 8px;
+    max-width: 700px;
+    line-height: 1.2
+}
+
+@media screen and (max-width: 767px) {
+    section#hero h1 {
+        font-size:40px
+    }
+}
+
+@media screen and (max-width: 575px) {
+    section#hero h1 {
+        font-size:32px
+    }
+}
+
+section#hero h1 span {
+    font-size: 32px;
+    display: block;
+    color: #4d5767;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: unset
+}
+
+@media screen and (max-width: 767px) {
+    section#hero h1 span {
+        font-size:28px
+    }
+}
+
+@media screen and (max-width: 575px) {
+    section#hero h1 span {
+        font-size:22px
+    }
+}
+
+section#hero h2 {
+    margin: 0 0 15px;
+    color: #79818d;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 32px
+}
+
+section#hero p {
+    color: #202d41;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.5px;
+    text-align: center;
+    margin-bottom: 0
+}
+
+section#hero span {
+    color: #008561;
+    font-size: 42px;
+    line-height: 0;
+    margin-bottom: 10px
+}
+
+section#hero .container {
+    max-width: unset;
+    padding: 0 40px
+}
+
+section#pricing-box-container {
+    padding: 41px 0 0;
+    background: #fff
+}
+
+section#pricing-box-container .pay-dot {
+    display: none
+}
+
+section#pricing-box-container #product-toggle-info-wrapper {
+    display: flex;
+    justify-content: center
+}
+
+section#pricing-box-container #product-toggle-info {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    max-width: 334px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf1f0;
+    height: 44px;
+    margin: 7px auto 40px;
+    padding: 6px;
+    border: unset;
+    border-radius: 8px
+}
+
+section#pricing-box-container #product-toggle-info #pt-controls {
+    margin: unset;
+    display: inline-block;
+    border-radius: 24px;
+    transition: box-shadow .2s ease-out
+}
+
+section#pricing-box-container #product-toggle-info #pt-controls input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+section#pricing-box-container #product-toggle-info #pt-controls input.active+#pt-slider {
+    border-color: #008561;
+    background-color: rgba(0,0,0,0);
+    border: 0
+}
+
+section#pricing-box-container #product-toggle-info #pt-controls input.active+#pt-slider::before {
+    left: unset;
+    transform: translateX(0);
+    right: 6px;
+    width: calc(50% - 6px)
+}
+
+section#pricing-box-container #product-toggle-info #pt-controls input:focus+#pt-slider {
+    box-shadow: none
+}
+
+section#pricing-box-container #product-toggle-info #pt-controls::before {
+    height: 22px;
+    width: 22px;
+    top: 3px;
+    left: 3px
+}
+
+section#pricing-box-container #product-toggle-info #pt-controls #pt-slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    transition: .2s;
+    border-radius: 24px;
+    height: inherit;
+    border: 0;
+    width: inherit;
+    background-color: rgba(0,0,0,0)
+}
+
+section#pricing-box-container #product-toggle-info #pt-controls #pt-slider::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    transition: .2s;
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    left: unset;
+    transform: translateX(-100%);
+    top: 6px;
+    width: calc(50% - 6px);
+    height: 32px;
+    border-radius: 4px
+}
+
+section#pricing-box-container #product-toggle-info .pt-label {
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    color: #202d41;
+    font-weight: 800;
+    line-height: 36px;
+    flex-basis: auto;
+    font-size: 16px
+}
+
+section#pricing-box-container #product-toggle-info .pt-label#pt-label-monthly,section#pricing-box-container #product-toggle-info .pt-label#pt-label-annual {
+    color: #202d41
+}
+
+section#pricing-box-container #product-toggle-info .pt-label#pt-label-monthly.active,section#pricing-box-container #product-toggle-info .pt-label#pt-label-annual.active {
+    color: #202d41
+}
+
+section#pricing-box-container #product-toggle-info .pt-label#pt-label-monthly {
+    left: unset
+}
+
+section#pricing-box-container #product-toggle-info .pt-label .pt-label-annual-savings {
+    color: #008561;
+    font-weight: 600
+}
+
+section#pricing-box-container #product-toggle-info .pt-label.active .pt-label-annual-savings {
+    color: #008561;
+    font-weight: 600
+}
+
+section#pricing-box-container #product-toggle-info .annual-discount {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #202d41;
+    width: auto;
+    padding-left: 18px;
+    height: 36px;
+    overflow-y: hidden;
+    font-size: 16px;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    left: 232px
+}
+
+section#pricing-box-container #product-toggle-info .annual-discount::before {
+    content: "";
+    position: absolute;
+    display: block;
+    float: left;
+    top: calc(50% - 18px);
+    left: 6px;
+    width: 36px;
+    height: 36px;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    background-color: #ffcc50;
+    border-radius: 0 0 0 4px;
+    transform: rotate(45deg)
+}
+
+section#pricing-box-container #product-toggle-info .annual-discount #annual-discount-wrap {
+    background-color: #ffcc50;
+    line-height: 22px;
+    padding: 7px 21.5px 7px 0;
+    margin-left: 6px;
+    width: calc(100% - 18px);
+    border-radius: 0 4px 4px 0
+}
+
+section#pricing-box-container #product-toggle-info .annual-discount #desktop-only {
+    font-weight: 400
+}
+
+section#pricing-box-container .pt-label-annual-savings {
+    font-weight: 600;
+    color: #fff
+}
+
+section#pricing-box-container #pricing-toggle-center {
+    text-align: center;
+    margin-top: 20px
+}
+
+section#pricing-box-container #pricing-boxes {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 880px;
+    padding: 0 40px;
+    gap: 32px
+}
+
+section#pricing-box-container #pricing-boxes.flp-pricing-trial-variant.view-monthly .pricing-box#pricing-standard .pricing-btn:first-of-type,section#pricing-box-container #pricing-boxes.flp-pricing-trial-variant.view-monthly .pricing-box#pricing-premium .pricing-btn:first-of-type {
+    margin-bottom: 16px
+}
+
+section#pricing-box-container #pricing-boxes.flp-pricing-trial-variant.view-monthly .pricing-box#pricing-standard .pricing-btn:not(.free-trial-btn),section#pricing-box-container #pricing-boxes.flp-pricing-trial-variant.view-monthly .pricing-box#pricing-premium .pricing-btn:not(.free-trial-btn) {
+    background-color: rgba(0,0,0,0);
+    color: #008561;
+    border: 2px solid #008561;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+section#pricing-box-container #pricing-boxes.flp-pricing-trial-variant.view-monthly .pricing-box#pricing-standard .pricing-btn:not(.free-trial-btn):hover,section#pricing-box-container #pricing-boxes.flp-pricing-trial-variant.view-monthly .pricing-box#pricing-premium .pricing-btn:not(.free-trial-btn):hover {
+    background-color: #008561;
+    color: #fff
+}
+
+section#pricing-box-container #pricing-boxes.view-annual .free-trial-btn {
+    display: none
+}
+
+section#pricing-box-container #pricing-boxes.discount-flag-shown .pricing-box.no-flag h3 {
+    line-height: 1.2;
+    height: auto;
+    margin-bottom: 8px
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box {
+    max-width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box {
+        max-width:540px
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box::before {
+    width: 100%;
+    height: 12px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box::before {
+        width:12px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box::before {
+        height:100%
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box#pricing-standard::before {
+    background-color: #b8c6c2
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box#pricing-premium::before {
+    background-color: #214e41
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box#pricing-standard h3,section#pricing-box-container #pricing-boxes .pricing-box#pricing-premium h3 {
+    font-size: 32px;
+    padding: 36px 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    background-color: #fff;
+    color: #202d41;
+    line-height: 1.2;
+    border: unset;
+    height: auto;
+    margin-bottom: 8px
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box#pricing-standard h3,section#pricing-box-container #pricing-boxes .pricing-box#pricing-premium h3 {
+        font-size:28px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box#pricing-standard h3,section#pricing-box-container #pricing-boxes .pricing-box#pricing-premium h3 {
+        padding:24px 24px 0 36px
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box#pricing-standard h3 span,section#pricing-box-container #pricing-boxes .pricing-box#pricing-premium h3 span {
+    color: #008561;
+    line-height: 0
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box#pricing-standard .pricing-btn,section#pricing-box-container #pricing-boxes .pricing-box#pricing-premium .pricing-btn {
+    margin: 0 auto 24px;
+    color: #fff;
+    background-color: #008561;
+    border-color: #008561
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box#pricing-standard .pricing-btn,section#pricing-box-container #pricing-boxes .pricing-box#pricing-premium .pricing-btn {
+        margin:0 auto
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box#pricing-standard .pricing-btn:hover,section#pricing-box-container #pricing-boxes .pricing-box#pricing-premium .pricing-btn:hover {
+    background-color: #006f51;
+    border-color: #006f51
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.animate.has-discount .default-price {
+    animation: strike-through .3s forwards
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.animate.has-discount .default-price::before {
+    transition: width .3s ease
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.animate.has-discount .promo-price {
+    animation: slide-in .5s forwards
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.animate.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+    transition: transform .5s ease
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.animate .promo-price {
+    transition: transform .5s ease;
+    animation: slide-out .5s forwards
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.animate .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+    transition: transform .5s ease
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.has-discount .default-price {
+    font-size: 48px;
+    margin-right: 0;
+    display: inline;
+    color: #b8c6c2;
+    font-weight: 800;
+    line-height: 1.2
+}
+
+@media screen and (max-width: 991px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .default-price {
+        font-size:44px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .default-price {
+        font-size:48px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .default-price {
+        margin-right:unset
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price {
+    margin-bottom: 58px
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price {
+        text-align:center
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price {
+        width:100%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext {
+        width:100%
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+    transform: translateX(calc(100% + 20px))
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+        flex-direction:row
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+        justify-content:center
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+        align-items:center
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+        gap:8px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+        top:-54px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+        width:100%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-toggle-text {
+        transform:translateX(0)
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box.has-discount .pricing-box-content .pricing-cta .price-subtext .price-discount-savings {
+    visibility: visible
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box p {
+    text-align: left;
+    font-weight: 400
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box ul li {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+@media screen and (max-width: 991px) {
+    section#pricing-box-container #pricing-boxes .pricing-box ul li {
+        font-size:14px
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box ul li.feature-unavailable::before {
+    font-size: 11px;
+    color: #e5718d
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box ul li span.ai-powered {
+    z-index: 1
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content {
+    flex-direction: row;
+    padding: 0 32px 32px;
+    gap: unset
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content {
+        flex-direction:column
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content {
+        padding:0 24px 8px 36px
+    }
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-features .accordion-item h4 {
+    margin-top: 8px;
+    border: unset
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-features .accordion-item h4 button.accordion-button {
+    font-weight: 800;
+    padding: 16px 0
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-features .accordion-item h4 button.accordion-button:not(.collapsed) {
+    color: #202d41;
+    background-color: rgba(0,0,0,0);
+    box-shadow: unset
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-features .accordion-item h4 button.accordion-button:focus {
+    box-shadow: none;
+    border: unset
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-features .accordion-item h4 button.accordion-button::before {
+    display: none
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-features .accordion-item h4 button.accordion-button::after {
+    content: attr(data-icon);
+    color: #008561;
+    font-family: pas-icons,sans-serif;
+    background-image: unset
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-features .accordion-item .accordion-body {
+    padding: 0 0 24px
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-features,section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-cta {
+    width: 100%
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-cta {
+    position: relative
+}
+
+section#pricing-box-container #pricing-boxes .pricing-box .pricing-box-content .pricing-cta .price {
+    font-size: 48px;
+    margin-bottom: 32px;
+    display: inline-flex;
+    gap: 10px;
+    text-align: left;
+    color: #008561;
+    font-weight: 800;
+    line-height: 1.2
+}
+

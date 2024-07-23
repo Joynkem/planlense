@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #bfdce7;
+    
+}
+.navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        background-color: #c8dbf3;
+        color: #fff;
+}
+
+.logoimg{
+    width: 50px; 
+    height:50px;
+    margin-top: 2px;
+}
+.navlink{
+    display: flex;
+    gap: 5rem;
+    font-size: 18px;
+}
+/* .navlink li:hover {
+    background-color: #7dc9c9;
+    transition: 0.3s ease;
+  } */
+  
+.navbar button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 4.5rem;
+    height: 2rem;
+    background-color: #efe2ba;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+}
+  
+li {
+    list-style: none;
+}
+
+.createbus label{
+    margin-left: 22rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color: #0d2e41;
+    font-weight: bold;
+}
+.formdiv{
+    margin-left: 12rem;
+    margin-top: 5rem;
+}
+.createbus input, textarea{
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 12px;
+        border: 1.3px solid #e19494;
+        border-radius: 4px;
+        width: 80%;
+        /* resize: vertical; */
+}
+#sigup{
+    color: #dbe7ef;
+    font-size: 1.4rem;
+}
+.planCats{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        background-color: #F98866;
+        padding: 10px;
+        }
+.mainandside{
+    display: grid;
+    grid-template-columns:25% 75% ;
+    /* max-height: 39rem; */
+}
+.sidebar{
+    background-color: #1e4772;
+    border:  solid 3px #ddbaa9;
+    margin-right: 2rem;
+    /* height: 39rem; */
+}
+.sidebar a {
+    display: block;
+    color: #bfdce7;
+    padding: 16px;
+    text-decoration: none;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Sofia", sans-serif;
+    font-size: 15px;
+    
+  }
+  .sidebar a.active {
+    color: white;
+  }
+  label {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+  }
+  .signbtn{
+background-color:#1e4772; 
+margin-left: 22rem;
+margin-right: 10rem;
+margin-bottom: 5rem;
+width: 10rem;
+height: 3rem;
+color: #dccad1;
+border-radius: 7px;
+ }
+ .signinlink{
+    color: #763418;
+    font-weight: bold;
+ }
+.sticky{
+    position: fixed;
+}
+  .bizfm{
+    font-family: "Trirong", serif;
+    font-size: 15px;
+}
+.catdiv{
+    width: 15rem;
+    height: 13rem;
+    margin-bottom: -3rem;
+    margin-right: 15rem;
+    border-radius: 10px;
+}
+.landr{
+    margin-left: 30rem;
+    margin-bottom: -2rem;
+    background-color: #efe2ba;
+}
+.right{
+    margin-top: -1rem;
+    margin-left: 20rem;
+    background-color: #9a1750;
+}
+.left{
+    margin-top: -9.5rem;
+    margin-left: 40rem;
+    background-color: #6fafef;
+}
+.ulandr{
+    margin-top: -8rem;
+    background-color: #cf8b31;
+}
+.randd{
+    background-color: #da7893;
+}
+i{
+    color: #4a739f;
+}
+.griditem1{
+    background-color: #d6b5c3;
+    border-radius: 10px;
+}
+.inst{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 0.5rem;
+
+}
+@media screen and (max-width: 310px) {
+    .navbar{
+        background-color: rgb(15, 85, 165);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        transform: translateX(150%);
+        transition: transform 2000ms ease-in-out cubic horizontal(0.075,0.82, 0.165,1);
+    }
+    .menuContainer{
+        width: 32px;
+        position: relative;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .hamburger{
+        width: 100%;
+        height: 3px;
+        background-color: #43231a;
+        position: absolute;
+    }
+    .hamburger::after{
+        content: " ";
+        top: 6px;
+        width: 100%;
+        height: 3px;
+        background-color: #43231a;
+        position: absolute;
+    }
+    .hamburger::before{
+        content: " ";
+        top: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #43231a;
+        position: absolute;
+    }
+    .mainheader{
+        display: flex;
+        align-items: center;
+    }
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+    
+}

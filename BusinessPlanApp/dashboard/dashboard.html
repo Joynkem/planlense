@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="../bizstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">    <title>Your Dashboard</title> -->
+    <link rel="stylesheet" href="../createaccount/signupstyle.css">
+</head>
+<body>
+  <main>
+    <header class="mainheader">
+            
+      
+  </header>
+    <div class="mainandside">
+      
+        <section class="sidebar">
+          <a class="font-effect-shadow-multiple active" href="#createbus" id="create"><i class="fa fa-upload" aria-hidden="true"></i>
+            Executive Summary</a>
+        <a class="font-effect-shadow-multiple " href="#createbus" id="create"><i class="fa fa-upload" aria-hidden="true"></i>
+               Financial Projections</a>
+          <a href="#news" class="font-effect-shadow-multiple"><i class="fa fa-upload" aria-hidden="true"></i>
+            Target Market</a>
+          <a href="#contact" class="font-effect-shadow-multiple"><i class="fa fa-upload" aria-hidden="true"></i>
+            Products or Services</a>
+          <a href="#about" class="font-effect-shadow-multiple"><i class="fa fa-upload" aria-hidden="true"></i>
+           Marketing Channels</a>
+      </section>
+        
+        
+      <div>
+        <h1>Complete the form below to register a business</h1>
+        <div id="multi-step-form-container">
+            <!-- Form Steps / Progress Bar -->
+            <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+                <!-- Step 1 -->
+                <li class="form-stepper-active text-center form-stepper-list" step="1">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle">
+                            <span>1</span>
+                        </span>
+                        <div class="label">Executive Summary</div>
+                    </a>
+                </li>
+                <!-- Step 2 -->
+                <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>2</span>
+                        </span>
+                        <div class="label text-muted">Financial Projections</div>
+                    </a>
+                </li>
+                <!-- Step 3 -->
+                <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>3</span>
+                        </span>
+                        <div class="label text-muted">Target Market</div>
+                    </a>
+                </li>
+                 <!-- Step 4 -->
+                <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>4</span>
+                        </span>
+                        <div class="label text-muted">Market Channels</div>
+                    </a>
+                </li>
+                 <!-- Step 5 -->
+                <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>5</span>
+                        </span>
+                        <div class="label text-muted">Product/Services</div>
+                    </a>
+                </li>
+            </ul>
+            <!-- Step Wise Form Content -->
+            <form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
+                <!-- Step 1 Content -->
+                <section id="step-1" class="form-step">
+                    <h2 class="font-normal">Business Description</h2>
+                    <!-- Step 1 input fields -->
+            <div class="mt-3">
+            <span id="industry-error" class="error-message"></span>
+
+            <select name=" " id="industry" >
+                    <option>Choose an industry</option>
+                    <option>Finance</option>
+                    <option>Agriculture</option>
+                    <option>Energy</option>
+                    <option>Education</option>
+                    <option>Clothing and textiles</option>
+                    <option>Fitness and Beauty</option>
+                    <option>EReal Estate</option>
+                    <option>Advertising</option>
+                  </select>
+            <span id="companyname-error" class="error-message"></span>
+            <input type="text"  id="comnm"  name=""placeholder="Company name" />
+            <span id="nameofdirector-error" class="error-message"></span>
+            <input type="text"  id="dirnm"  name=""placeholder="Name of director" />
+            <span id="companyaddress-error" class="error-message"></span>
+            <input type="text"  id="comadd"  name=""placeholder="Company Address" />
+            <span id="cooverview-error" class="error-message"></span>
+            <textarea name="" id="cooverview" placeholder="Enter an Overview of your business"  rows="5"></textarea>
+            </div>
+                <div class="mt-3">
+                        <button class="button btn-navigate-form-step"  class="signbtn" 
+                        onclick="saveDescription(); validateDescriptn()" type="button" step_number="2">Next</button>
+                    </div>
+                </section>
+                <!-- Step 2 Content, default hidden on page load. -->
+                <section id="step-2" class="form-step d-none">
+                    <h2 class="font-normal">Financial Projections Per Annum (In Naira)</h2>
+
+                    <!-- Step 2 input fields -->
+                    <div class="mt-3">
+                        <div class="mt-3">
+                            <span id="sales-error" class="error-message"></span>
+                            <input type="text"  id="saless"  name=""placeholder="Sales forecast" />
+                            <span id="profit-error" class="error-message"></span>
+                            <input type="text"  id="profitt"  name=""placeholder="Profit" />
+                            <span id="expenses-error" class="error-message"></span>
+                            <input type="text"  id="expensess"  name=""placeholder="Expenses" />
+                            </div>
+                            
+                    <div class="mt-3">
+                        <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
+                        <button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
+                    </div>
+                </section>
+                <!-- Step 3 Content, default hidden on page load. -->
+                <section id="step-3" class="form-step d-none">
+                    <h2 class="font-normal">Personal Details</h2>
+                    <!-- Step 3 input fields -->
+                    <div class="mt-3">
+                        Step 3 input fields goes here..
+                    </div>
+                    <div class="mt-3">
+                        <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
+                        <button class="button submit-btn" type="submit">Save</button>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+    </main>
+  
+  
+  <!-- <script src="./signupin.js"></script> -->
+  <script src="./descrption.js"></script>
+  <script src="./dashboard.js"></script>
+
+</body>
+</html>
